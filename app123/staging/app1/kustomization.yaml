@@ -4,4 +4,7 @@ commonLabels:
   app: app1
 
 resources:
-- deployment.yaml
+- app1-deployment.yaml
+
+bases:
+- ../../base/app1
