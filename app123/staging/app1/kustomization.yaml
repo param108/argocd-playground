@@ -6,3 +6,9 @@ commonLabels:
 bases:
 - ../../base/app1
 
+patchesJson6902:
+- target:
+    version: v1
+    kind: Deployment
+    name: app1
+  path: replicas.yaml
