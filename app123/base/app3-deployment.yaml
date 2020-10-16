@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+    name: app3
+spec:
+    progressDeadlineSeconds: 600
+    replicas: 2
+    revisionHistoryLimit: 10
+    selector:
+        matchLabels:
+            component: app3-executor
+    strategy:
+        rollingUpdate:
+        maxSurge: 1
+        maxUnavailable: 1
+        type: RollingUpdate
+    template:
+        metadata:
+            creationTimestamp: null
+            labels:
+                component: app3-executor
+        spec:
+            containers:
+            -   image: app3
+                name: app3
+
+
