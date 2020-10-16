@@ -8,7 +8,7 @@ bases:
 
 patchesJson6902:
 - target:
-    version: apps/v1
+    version: v1
     kind: Deployment
     namespace: app1
     name: app1
