@@ -23,5 +23,6 @@ spec:
             containers:
             -   image: app1
                 name: app1
+                imagePullPolicy: Never
 
 
