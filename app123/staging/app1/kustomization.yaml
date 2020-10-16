@@ -4,7 +4,7 @@ commonLabels:
   app: app1
 
 bases:
-- github.com/param108/argocd-playground/base/app1
+- ../../base/app1
 
 resources:
 - app1-deployment.yaml
